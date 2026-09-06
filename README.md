@@ -9,8 +9,7 @@ The project allows authenticated users to create short URLs, redirect visitors t
 ---
 🚀 Live Demo
 
-Live Application: nodejs-url-shortener-production.up.railway.app
-
+Live Application: Open URL Shortener
 ## 📌 Features
 
 * User signup and login
