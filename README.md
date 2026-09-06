@@ -115,7 +115,7 @@ project-url-shortner/
 ├── index.js
 ├── package.json
 ├── package-lock.json
-└── .env
+
 ```
 
 ### Folder Responsibilities
@@ -710,15 +710,22 @@ MONGO_URL=your_mongodb_connection_string
 JWT_SECRET=your_secret_key
 ```
 
-## 5. Start the application
+### Run the application
+
+For the normal Node.js server:
 
 ```bash
 npm start
 ```
 
-The project uses Nodemon, so changes to the source files automatically restart the development server.
+For development with automatic server restart using Nodemon:
 
----
+```bash
+npm run dev
+```
+
+The `npm start` command runs the application with Node.js, while `npm run dev` uses Nodemon to automatically restart the server when source files change.
+
 
 # 🧪 Example Application Flow
 
