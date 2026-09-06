@@ -17,9 +17,6 @@ async function handleCreateNewShortUrl(req, res) {
     visitHistory: [],
     createdBy: req.user._id,
   });
-  /*
-return res.status(201).json({ message: "Url created successfully", shortId });
-*/
   
 return res.redirect(`/?id=${shortId}`);}
 
@@ -60,15 +57,19 @@ async function handleGetUrlAnalytics(req, res) {
 
 async function handleHomePage(req, res) {
   const allUrls = await Url.find({
-        createdBy: req.user._id,
-
+    createdBy: req.user._id,
   });
+
+  const shortUrl = req.query.id
+    ? `${req.protocol}://${req.get("host")}/${req.query.id}`
+    : null;
+
   res.render("home", {
     urls: allUrls,
-     id: req.query.id,
+    id: req.query.id,
+    shortUrl,
   });
 }
-
 
 
 module.exports = {
