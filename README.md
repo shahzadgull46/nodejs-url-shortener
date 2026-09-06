@@ -7,6 +7,9 @@ The project allows authenticated users to create short URLs, redirect visitors t
 > **Note:** This project was built as a learning project while studying Node.js and backend development. Some production-level security hardening is intentionally left as future improvement.
 
 ---
+🚀 Live Demo
+
+Live Application: nodejs-url-shortener-production.up.railway.app
 
 ## 📌 Features
 
